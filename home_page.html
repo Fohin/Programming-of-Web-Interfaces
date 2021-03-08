@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<title>Strona główna</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Programming of Web Interfaces">
+<meta name="keywords" content="HTML, CSS">
+<meta name="author" content="Filip Sołdon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+  background: url("https://wallpaperaccess.com/full/271022.jpg");
+  background-size: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Open Sans", Helvetica;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /*
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0;
+  */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+div.transbox {
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox h2 {
+  color: #000000;
+}
+
+div.transbox p {
+  margin: 1%;
+  font-weight: bold;
+  color: #000000;
+}
+
+table {
+  width:60%;
+  
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: black;
+  
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+#t01 th {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.active {
+  background-color: #FF6347;
+} 
+
+.thick-grey-border {
+  border-color: grey;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+	<header>
+		<ul>
+		  <li><a class="active" href="home_page.html#home">Strona główna</a></li>
+		  <li><a href="cat_with_css.html#cats_css">Kot1</a></li>
+		  <li><a href="cat_without_css.html#cats">Kot2</a></li>
+		  <li><a href="penguin.html#penguin">Pingwin</a></li>
+		  <li><a href="https://www.freecodecamp.org/#code_camp">Kurs HTML/CSS</a></li>	  
+		</ul>
+	</header>
+	
+	<main>
+		<section>
+			<h1>Mały Wielki Student - Filip Macedończyk</h1>
+			<p>Jest to strona poświęcona studencie, o którym świat nie zapomni.</p>
+			<div>
+				<img class="thick-grey-border" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrtE9fQ5taS8cSw5vM9iWueQd8HL4agB_KA&usqp=CAU" alt="Photo1"> 
+				<img class="thick-grey-border" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwyqpjAmQf9cJZJYedogG6ivGM_FAyiIOwQ&usqp=CAU" alt="Avatar" style="width:300px">
+				<a href="https://www.dreamstime.com/photos-images/male-student.html"><img class="thick-grey-border" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HtjwDRfnJOPS4p-4Y9B6Dy2zWyKHxLxm7g&usqp=CAU" alt="Photo2"></a>
+			</div>
+		</section>
+		
+		<section>
+			<div class="transbox">
+				<h2>Dzieciństwo i młodość</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales augue purus, in rutrum tellus venenatis ut. Aenean erat nunc, consectetur vitae diam ac, semper dapibus mi. In finibus arcu ac velit finibus, vitae bibendum nisl condimentum. Morbi volutpat consequat sollicitudin. Integer vel nisl congue, congue quam eu, tincidunt metus. Pellentesque faucibus placerat quam, eget tincidunt risus vestibulum ut. Donec dui diam, ullamcorper accumsan bibendum in, convallis eget metus. Sed varius ultrices augue sollicitudin tristique. Integer sit amet erat vel nisi semper congue tempor vel nisi. Vivamus ac consequat libero. Vivamus nec pharetra nulla.</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="transbox">
+				<h2>Studia</h2>
+				<p>Nam tristique, urna vel dapibus lacinia, neque risus ullamcorper turpis, at facilisis eros quam in dolor. Aliquam a ornare dui. Sed nec elementum turpis, quis fermentum ipsum. Morbi sed mollis lectus. Nunc sagittis erat augue, a molestie ligula ornare eget. Maecenas mollis nisi id commodo lacinia. Nulla dui velit, elementum et sem sed, suscipit malesuada nibh.</p>
+			</div>
+		</section>
+		
+		<section>
+			<div class="transbox">
+				<h2>Osiagnięcia</h2>
+				<p>Phasellus magna ligula, dictum vitae semper a, euismod in velit. Nullam mauris lectus, lobortis id orci sed, lacinia rhoncus ante. Sed condimentum eleifend sapien. Etiam sed elementum lacus. Nulla dignissim quam orci. In viverra, quam quis accumsan interdum, tortor odio accumsan velit, nec tincidunt dui nunc ac nisi. Fusce ultricies ullamcorper fringilla. Phasellus condimentum tellus a luctus ultricies. Duis at turpis consectetur, tincidunt urna at, maximus metus. Nullam quis ligula eu ipsum consequat sagittis ac vitae eros. Morbi vel sapien arcu. Vestibulum a turpis ipsum.</p>
+			</div>
+		</section>
+		
+		<section>
+			<div>
+				<h2>Tabela zajęć</h2>
+				<table id="t01" class="center">
+					  <tr>
+						<th>Termin</th>
+						<th>Nazwa kursu</th> 
+						<th>Prowadzący</th>
+					  </tr>
+					  <tr>
+						<td>Poniedziałek, 17:05-18:45</td>
+						<td>Systemy operacyjne 1</td>
+						<td>Dr inż. Jan Kowalski</td>
+					  </tr>
+					  <tr>
+						<td>Wtorek, 9:15-12:15</td>
+						<td>Inżynieria oprogramowania</td>
+						<td>Dr inż. Jan Nowak</td>
+					  </tr>
+					  <tr>
+						<td>Środa, 15:15-16:55</td>
+						<td>Grafika komp.i kom.człow.-komp</td>
+						<td>Dr inż. Jan Pawlicki</td>
+					  </tr>
+					  <tr>
+						<td>Czwartek, 15:15-16:55</td>
+						<td>Urządzenia peryferyjne</td>
+						<td>Dr inż. Jan Kowal</td>
+					  </tr>
+					  <tr>
+						<td>Piątek, 9:15-10:45</td>
+						<td>Technologie sieciowe</td>
+						<td>Dr inż. Jan Makowski</td>
+					  </tr>
+					  <tr>
+						<td>Piątek, 17:15-20:15</td>
+						<td>Bazy danych 2</td>
+						<td>Dr inż. Jan Nowakowski</td>
+					  </tr>
+				</table>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>
