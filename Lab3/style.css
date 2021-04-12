@@ -101,7 +101,7 @@ form button:hover {
     padding: 0px 8px;
 }
 
-.fa-trash, .fa-check {
+.fa-trash-alt, .fa-check {
     pointer-events: none;
 }
 
