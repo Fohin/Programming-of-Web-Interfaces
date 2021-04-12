@@ -57,20 +57,36 @@ function addTodo(event) {
     todoInput.value = "";
 } 
 
-function deleteCheck(event) {
+//Delete - JQuery
+$(".todo-list").on("click", function(event){
     const item = event.target;
 
-    //Check todo
-    if(item.classList[0] === "trash-btn" && confirm("Are you sure you want to delete this element?")){
+    if(item.classList[0] === "trash-btn" && confirm("This item will be permanently deleted, do you still want to do this?")){
         const todo = item.parentElement;
         //Animation
         todo.classList.add("fall");
-        todo.addEventListener("transitionend", function(){
+        $(".todo-list").on("transitionend", function(){
+        //todo.addEventListener("transitionend", function(){
             todo.remove();
         });
     }
+}) 
 
-    //Check mark
+
+function deleteCheck(event) {
+    const item = event.target;
+
+    //Delete in JS
+    //if(item.classList[0] === "trash-btn" && confirm("This item will be permanently deleted, do you still want to do this?")){
+     //   const todo = item.parentElement;
+     //   //Animation
+    //    todo.classList.add("fall");
+     //   todo.addEventListener("transitionend", function(){
+     //       todo.remove();
+     //   });
+   // }
+
+    //Check
     if(item.classList[0] === "complete-btn"){
 
         const todo = item.parentElement;
