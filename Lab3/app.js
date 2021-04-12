@@ -77,6 +77,7 @@ function deleteCheck(event) {
         todo.classList.toggle("completed");
 
         const todoDate = item.parentElement.firstChild;
+        const todoText = item.parentElement.children[1];
 
         if(todo.classList.contains("completed")){
 
@@ -89,7 +90,7 @@ function deleteCheck(event) {
             const sec = date.getSeconds();
             todoDate.innerText = `${hour < 10 ? "0" + hour : hour}:${minute < 10 ? "0" + minute : minute}:${sec < 10 ? "0" + sec : sec} ${day < 10 ? "0" + day : day}/${month < 10 ? "0" + month : month}/${year}`;
             todoDate.style.display = "flex";
-            todoDate.style.textDerocation = "none";
+            todoText.style.textDecoration = "line-through";
         }
         else{
             todoDate.style.display = "none";

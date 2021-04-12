@@ -106,7 +106,6 @@ form button:hover {
 }
 
 .completed {
-    text-decoration: line-through;
     opacity: 0.5;
 }
 
@@ -157,12 +156,13 @@ select {
 }
 
 .completed-date {
-    color: #AF47DF;
+    color: black;
     background: white;
     margin: 16px;
     font-size: 16px;
     text-decoration: none;
     display: none;
+    opacity: 1;
 }
 
 .search {
