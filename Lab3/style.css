@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+    background-size: 100%;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height:  800px;
+}
+
+header {
+    color: #AF47DF;
+    font-size: 40px;
+}
+
+header,
+form {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    color: #AF47DF;
+    padding: 8px;
+    font-size: 32px;
+    border: none;
+    background: white;
+}
+
+form input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+form button{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #AF47DF;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #AF47DF;
+    color: white; 
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    border-radius: 8px;
+    margin: 8px;
+    background: white;
+    color: #AF47DF;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.trash-btn {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.complete-btn {
+    background: rgb(52, 236, 52);
+}
+
+.todo-item {
+    padding: 0px 8px;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(128px) rotateZ(-20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-apppearance: none;
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    background-image: none;
+}
+
+.select {
+    border-radius: 8px;
+    margin: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #AF47DF;
+    width: 160px;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #AF47DF;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #AF47DF;
+}
+
+.completed-date {
+    color: #AF47DF;
+    background: white;
+    margin: 16px;
+    font-size: 16px;
+    text-decoration: none;
+    display: none;
+}
+
+.search {
+    border-radius: 8px;
+    margin: 16px;
+    color: #AF47DF;
+    font-size: 32px;
+}
