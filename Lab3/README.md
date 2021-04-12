@@ -1,1 +1,1 @@
-# Link to GithubPages: https://fohin.github.io/Programming-of-Web-Interfaces/Lab2
+# Link to GithubPages: https://fohin.github.io/Programming-of-Web-Interfaces/Lab3
