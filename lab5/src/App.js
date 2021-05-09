@@ -81,31 +81,31 @@ const App = () => {
       <Switch>
         
         <Route
-         exact path="/"
+         exact path="/Programming-of-Web-Interfaces/"
          component={() => (
             <SearchProfiles profiles={profiles} setProfiles={setProfiles} />
           )} 
         />
         <Route
-         exact path="/searchProfiles"
+         exact path="/Programming-of-Web-Interfaces/searchProfiles"
          component={() => (
             <SearchProfiles profiles={profiles} setProfiles={setProfiles} />
           )} 
         />
         <Route 
-         exact path="/newProfile" 
+         exact path="/Programming-of-Web-Interfaces/newProfile" 
          component={() => (
             <NewProfile profiles={profiles} setProfiles={setProfiles} />
           )} 
         />
         <Route
-         exact path="/searchGroupsProfiles"
+         exact path="/Programming-of-Web-Interfaces/searchGroupsProfiles"
          component={() => (
             <SearchGroups groups={groups} setGroupProfiles={setGroupProfiles} />
           )} 
         />
         <Route 
-         exact path="/newGroupProfile" 
+         exact path="/Programming-of-Web-Interfaces/newGroupProfile" 
          component={() => (
             <NewGroup groups={groups} setGroupProfiles={setGroupProfiles} />
           )} 
