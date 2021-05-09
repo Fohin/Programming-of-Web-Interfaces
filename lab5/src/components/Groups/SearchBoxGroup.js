@@ -5,11 +5,6 @@ import { makeStyles } from '@material-ui/styles';
 
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-
   searchField: {
     marginLeft: 200,
   },
@@ -17,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function Search(props) {
+function SearchBoxGroups(props) {
     const classes = useStyles();
 
     return (
@@ -29,7 +24,7 @@ function Search(props) {
             type="search" 
             variant="filled" 
             onChange={({ target: { value } }) => {
-            props.updateProfilesDescription(value);
+            props.updateGroupProfilesDescription(value);
             }}
             InputProps={{
                 endAdornment: <InputAdornment position="end">
@@ -49,7 +44,7 @@ function Search(props) {
             type="search" 
             variant="filled"
             onChange={({ target: { value } }) => {
-            props.updateProfilesTags(value);
+            props.updateGroupProfilesTags(value);
             }} 
             InputProps={{
                 endAdornment: <InputAdornment position="end">
@@ -65,4 +60,4 @@ function Search(props) {
   }
 
 
-export default Search;
+export default SearchBoxGroups;

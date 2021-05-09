@@ -1,31 +1,11 @@
 import React, { useState } from 'react';
-import Profile from './components/StudentProfile';
-import AddProfiles from './components/AddProfiles';
-import { makeStyles } from '@material-ui/core/styles';
-import { Box, Typography } from '@material-ui/core';
-import SearchBox from './components/SearchBox';
+import AppBar from './components/AppBar';
+import SearchProfiles from './pages/SearchProfiles';
+import NewProfile from './pages/NewProfile';
+import SearchGroups from './pages/SearchGroups';
+import NewGroup from './pages/NewGroup';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-const useStyles = makeStyles((theme) => ({
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-  },
-
-  titleContainer: {
-    marginTop: 20,
-    marginLeft: 40,
-    color: '#0099ff',
-  },
-
-  leftContainer: {
-    width: 800,
-  },
-  searchContainer: {
-    marginTop: 30,
-    marginLeft: 20,
-  },
-}));
 
 const students = [
   {
@@ -51,89 +31,78 @@ const students = [
   },
 ];
 
+const groupss = [
+  {
+    name: 'Nokia Group',
+    email: 'nokia.group@gmail.com',
+    description: 'Sed felis neque, cursus vitae enim non, facilisis sagittis nulla. Mauris lacus nulla, \
+                  ullamcorper non tincidunt ut, consequat ac sapien.',
+    tags: 'Python, Django, SQL, JavaScript',
+  },
+  {
+    name: 'PolWroProject',
+    email: 'polwroproject@gmail.com',
+    description: 'In gravida volutpat massa non tempor. Nunc commodo lacus sit amet nisi molestie, \
+                  quis consectetur sapien tempus. Maecenas vel tellus sed justo hendrerit venenatis.',
+    tags: 'Java, Docker, Python, C, C++',
+  },
+  {
+    name: 'BEST Wroclaw',
+    email: 'best.wroclaw@gmail.com',
+    description: 'Nam varius diam quis odio suscipit, in porttitor est sodales. Mauris aliquam lacus at velit iaculis convallis. \
+                  Quisque et mauris vel dui lobortis fringilla non vitae urna. Nullam vel velit vitae nibh rhoncus sodales vitae ac est.',
+    tags: 'Bash, Docker, Python'
+  },
+];
+
 const App = () => {
-  const classes = useStyles();
-
+  
   const [profiles, setProfiles] = useState(students);
-  const [searchProfiles, setSearchProfiles] = useState();
-
-
-  const updateProfilesDescription = (input) => {
-    if (input) {
-      const filtered = profiles?.filter((profile) => {
-        return profile.description
-          .toLowerCase()
-          .includes(input.toString().toLowerCase());
-      });
-      setSearchProfiles(filtered);
-    } else {
-      setSearchProfiles('');
-    }
-  };
-
-  const updateProfilesTags = (input) => {
-    if (input) {
-      const filtered = profiles?.filter((profile) => {
-        return profile.tags
-          .toLowerCase()
-          .includes(input.toString().toLowerCase());
-      });
-      setSearchProfiles(filtered);
-    } else {
-      setSearchProfiles('');
-    }
-  };
-
-  const addStudent = (name, email, tags, description) => {
-    if (name && email && tags && description) {
-      const newProfile = {
-        name: name,
-        email: email,
-        tags: tags,
-        description: description,
-      };
-      setProfiles([...profiles, newProfile]);
-    } else {
-      window.alert('Text field cannot be blank!');
-    }
-  };
-
+  const [groups, setGroupProfiles] = useState(groupss);
 
   return (
-    <Box class={classes.container}>
-      
-      <Box class={classes.leftContainer}>
-      
-        <Box class={classes.titleContainer}>
-             
-          <Typography variant="h2">
-            Tinder for students project
-          </Typography>
-            
-        </Box> 
 
-        <Box class={classes.searchContainer}>
-          <SearchBox 
-            updateProfilesDescription={updateProfilesDescription}
-            updateProfilesTags={updateProfilesTags}
-          />
-        </Box>
+    <Router>
+      
+      <AppBar/>
 
-        {(searchProfiles ? searchProfiles : profiles).map((profile) => {
-          return (
-            <Profile
-              name={profile.name}
-              email={profile.email}
-              description={profile.description}
-              tags={profile.tags}
-            />
-          );
-        })}
-      </Box>
-      <Box>
-        <AddProfiles addStudent={addStudent} />
-      </Box>
-    </Box>
+      <Switch>
+        
+        <Route
+         exact path="/"
+         component={() => (
+            <SearchProfiles profiles={profiles} setProfiles={setProfiles} />
+          )} 
+        />
+        <Route
+         exact path="/searchProfiles"
+         component={() => (
+            <SearchProfiles profiles={profiles} setProfiles={setProfiles} />
+          )} 
+        />
+        <Route 
+         exact path="/newProfile" 
+         component={() => (
+            <NewProfile profiles={profiles} setProfiles={setProfiles} />
+          )} 
+        />
+        <Route
+         exact path="/searchGroupsProfiles"
+         component={() => (
+            <SearchGroups groups={groups} setGroupProfiles={setGroupProfiles} />
+          )} 
+        />
+        <Route 
+         exact path="/newGroupProfile" 
+         component={() => (
+            <NewGroup groups={groups} setGroupProfiles={setGroupProfiles} />
+          )} 
+        />
+        
+      </Switch>
+
+    </Router>
+
   );
 };
 

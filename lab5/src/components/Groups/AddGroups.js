@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchBox(props) {
+export default function AddGroups(props) {
   const classes = useStyles();
   
   const [typedName, setTypedName] = useState('');
@@ -45,8 +45,8 @@ export default function SearchBox(props) {
   const [typedTags, setTypedTags] = useState('');
   const [typedDescription, setTypedDescription] = useState('');
 
-  const addStudent = () => {
-    props.addStudent(typedName, typedEmail, typedTags, typedDescription);
+  const addGroup = () => {
+    props.addGroup(typedName, typedEmail, typedTags, typedDescription);
     setTypedName('');
     setTypedEmail('');
     setTypedTags('');
@@ -59,14 +59,14 @@ export default function SearchBox(props) {
       <Grid className={classes.root} container>
 
         <Typography variant="h4" className={classes.titleField}>
-          Add new student
+          Add new group
         </Typography>
 
         <Grid className={classes.textFields}>
           <TextField
             variant="filled"
-            label="Your full name"
-            placeholder="Enter your full name"
+            label="Your Group Name"
+            placeholder="Enter your group name"
             fullWidth
             className={classes.textField}
             value={typedName}
@@ -77,8 +77,8 @@ export default function SearchBox(props) {
 
           <TextField
             variant="filled"
-            label="Your email"
-            placeholder="Enter your email"
+            label="Your Group Email"
+            placeholder="Enter your group email"
             fullWidth
             className={classes.textField}
             value={typedEmail}
@@ -101,8 +101,8 @@ export default function SearchBox(props) {
 
           <TextField
             variant="filled"
-            label="Your Description"
-            placeholder="Write something about yourself"
+            label="Your group description"
+            placeholder="Write something about your group"
             multiline
             rows={4}
             fullWidth
@@ -119,7 +119,7 @@ export default function SearchBox(props) {
             variant="contained"
             fullWidth
             className={classes.addButton}
-            onClick={() => addStudent()}
+            onClick={() => addGroup()}
           >
             Add
           </Button>
