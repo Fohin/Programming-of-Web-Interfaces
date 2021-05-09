@@ -74,38 +74,38 @@ const App = () => {
 
   return (
 
-    <Router>
+    <Router basename="/Programming-of-Web-Interfaces">
       
       <AppBar/>
 
       <Switch>
         
         <Route
-         exact path="/Programming-of-Web-Interfaces/"
+         exact path="/"
          component={() => (
             <SearchProfiles profiles={profiles} setProfiles={setProfiles} />
           )} 
         />
         <Route
-         exact path="/Programming-of-Web-Interfaces/searchProfiles"
+         exact path="/searchProfiles"
          component={() => (
             <SearchProfiles profiles={profiles} setProfiles={setProfiles} />
           )} 
         />
         <Route 
-         exact path="/Programming-of-Web-Interfaces/newProfile" 
+         exact path="/newProfile" 
          component={() => (
             <NewProfile profiles={profiles} setProfiles={setProfiles} />
           )} 
         />
         <Route
-         exact path="/Programming-of-Web-Interfaces/searchGroupsProfiles"
+         exact path="/searchGroupsProfiles"
          component={() => (
             <SearchGroups groups={groups} setGroupProfiles={setGroupProfiles} />
           )} 
         />
         <Route 
-         exact path="/Programming-of-Web-Interfaces/newGroupProfile" 
+         exact path="/newGroupProfile" 
          component={() => (
             <NewGroup groups={groups} setGroupProfiles={setGroupProfiles} />
           )} 
