@@ -74,7 +74,7 @@ const App = () => {
 
   return (
 
-    <Router basename="/tinder">
+    <Router>
       
       <AppBar/>
 
