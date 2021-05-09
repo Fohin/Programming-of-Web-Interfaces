@@ -10,9 +10,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => ({
   image: {
-    display: 'flex',
     marginTop: 50,
-    marginLeft: 380,
   },
 
 }));
@@ -111,7 +109,10 @@ const App = () => {
           )} 
         />
         <Route>
-          <div className={classes.image}>
+          <div 
+           style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+           class={classes.image}
+          >
             <img src={PageNotFound} alt="PageNotFound" />
           </div>  
         </Route>
