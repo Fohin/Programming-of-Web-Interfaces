@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Programming-of-Web-Interfaces/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Programming-of-Web-Interfaces/static/js/main.9445019b.chunk.js",
-    "main.js.map": "/Programming-of-Web-Interfaces/static/js/main.9445019b.chunk.js.map",
-    "runtime-main.js": "/Programming-of-Web-Interfaces/static/js/runtime-main.033d0c26.js",
-    "runtime-main.js.map": "/Programming-of-Web-Interfaces/static/js/runtime-main.033d0c26.js.map",
-    "static/js/2.76309510.chunk.js": "/Programming-of-Web-Interfaces/static/js/2.76309510.chunk.js",
-    "static/js/2.76309510.chunk.js.map": "/Programming-of-Web-Interfaces/static/js/2.76309510.chunk.js.map",
-    "static/js/3.2c873e46.chunk.js": "/Programming-of-Web-Interfaces/static/js/3.2c873e46.chunk.js",
-    "static/js/3.2c873e46.chunk.js.map": "/Programming-of-Web-Interfaces/static/js/3.2c873e46.chunk.js.map",
-    "index.html": "/Programming-of-Web-Interfaces/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Programming-of-Web-Interfaces/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.76309510.chunk.js.LICENSE.txt": "/Programming-of-Web-Interfaces/static/js/2.76309510.chunk.js.LICENSE.txt",
-    "static/media/PageNotFound.b2df4ff4.svg": "/Programming-of-Web-Interfaces/static/media/PageNotFound.b2df4ff4.svg"
+    "main.css": "/Programming-of-Web-Interfaces/lab5/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Programming-of-Web-Interfaces/lab5/static/js/main.9445019b.chunk.js",
+    "main.js.map": "/Programming-of-Web-Interfaces/lab5/static/js/main.9445019b.chunk.js.map",
+    "runtime-main.js": "/Programming-of-Web-Interfaces/lab5/static/js/runtime-main.f32e3a4f.js",
+    "runtime-main.js.map": "/Programming-of-Web-Interfaces/lab5/static/js/runtime-main.f32e3a4f.js.map",
+    "static/js/2.76309510.chunk.js": "/Programming-of-Web-Interfaces/lab5/static/js/2.76309510.chunk.js",
+    "static/js/2.76309510.chunk.js.map": "/Programming-of-Web-Interfaces/lab5/static/js/2.76309510.chunk.js.map",
+    "static/js/3.2c873e46.chunk.js": "/Programming-of-Web-Interfaces/lab5/static/js/3.2c873e46.chunk.js",
+    "static/js/3.2c873e46.chunk.js.map": "/Programming-of-Web-Interfaces/lab5/static/js/3.2c873e46.chunk.js.map",
+    "index.html": "/Programming-of-Web-Interfaces/lab5/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Programming-of-Web-Interfaces/lab5/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.76309510.chunk.js.LICENSE.txt": "/Programming-of-Web-Interfaces/lab5/static/js/2.76309510.chunk.js.LICENSE.txt",
+    "static/media/PageNotFound.b2df4ff4.svg": "/Programming-of-Web-Interfaces/lab5/static/media/PageNotFound.b2df4ff4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.033d0c26.js",
+    "static/js/runtime-main.f32e3a4f.js",
     "static/js/2.76309510.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
     "static/js/main.9445019b.chunk.js"
