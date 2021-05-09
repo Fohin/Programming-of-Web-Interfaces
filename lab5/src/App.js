@@ -4,8 +4,18 @@ import SearchProfiles from './pages/SearchProfiles';
 import NewProfile from './pages/NewProfile';
 import SearchGroups from './pages/SearchGroups';
 import NewGroup from './pages/NewGroup';
+import PageNotFound from './images/PageNotFound.svg';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { makeStyles } from '@material-ui/styles';
 
+const useStyles = makeStyles((theme) => ({
+  image: {
+    display: 'flex',
+    marginTop: 50,
+    marginLeft: 380,
+  },
+
+}));
 
 const students = [
   {
@@ -56,13 +66,15 @@ const groupss = [
 ];
 
 const App = () => {
+
+  const classes = useStyles();
   
   const [profiles, setProfiles] = useState(students);
   const [groups, setGroupProfiles] = useState(groupss);
 
   return (
 
-    <Router>
+    <Router basename="/tinder">
       
       <AppBar/>
 
@@ -98,6 +110,11 @@ const App = () => {
             <NewGroup groups={groups} setGroupProfiles={setGroupProfiles} />
           )} 
         />
+        <Route>
+          <div className={classes.image}>
+            <img src={PageNotFound} alt="PageNotFound" />
+          </div>  
+        </Route>
         
       </Switch>
 

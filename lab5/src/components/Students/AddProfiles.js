@@ -3,12 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Paper, TextField, Grid, Button, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexDirextion: 'row',
-    alignItems: 'center',
-  },
-
   paper: {
     padding: 30,
     minHeight: 450,

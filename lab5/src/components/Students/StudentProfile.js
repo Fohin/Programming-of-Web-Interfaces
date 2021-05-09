@@ -7,7 +7,7 @@ import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import SendRoundedIcon from '@material-ui/icons/SendRounded';
 
 const styles = (theme) => ({
-    root: {
+    paper: {
       margin: 20,
       backgroundColor: 'white',
     },
@@ -76,7 +76,7 @@ const styles = (theme) => ({
       const { classes } = this.props;
   
       return (
-        <Paper elevation={2} className={classes.root}>
+        <Paper elevation={2} className={classes.paper}>
 
           <CardContent>
 
