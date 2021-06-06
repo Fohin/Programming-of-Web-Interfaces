@@ -25,6 +25,14 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 500,
   },
 
+  container2: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    margin: '30px auto',
+    maxWidth: 500,
+  },
+
   homepage__title: {
     marginTop: 30,
     margin: 20,
@@ -68,8 +76,8 @@ export default function HomePage() {
       alignItems="center"
       className={classes.root}>
 
-    <Card className={classes.container}>
-      <CardActionArea to="/menuOrder" component={Link}>
+    <Card className={classes.container2}>
+      <CardActionArea to="/menu" component={Link}>
         <CardMedia
           className={classes.media}
           src={Image1}
@@ -82,6 +90,24 @@ export default function HomePage() {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Check out our Menu!
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.container2}>
+      <CardActionArea to="/orderList" component={Link}>
+        <CardMedia
+          className={classes.media}
+          src={Image1}
+          title="Order List"
+          component="img"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Order List
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+           Add or remove pizzas in your order!
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -60,6 +60,14 @@ export default function NavBar() {
 
           <Button
               color="inherit"
+              to="/orderList"
+              component={Link}
+          >
+            Order List
+          </Button>
+          
+          <Button
+              color="inherit"
               to="/"
               component={Link}
               onClick={logout}
@@ -83,7 +91,6 @@ export default function NavBar() {
             component={Link}>
               Philippo Pizzeria Ristorante
           </Typography>
-
         </Toolbar>
         </AppBar>
       </div>

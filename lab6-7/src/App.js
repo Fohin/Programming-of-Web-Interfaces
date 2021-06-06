@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import HomePage from './pages/HomePage';
 import Menu from './pages/Menu';
 import MenuOrder from './pages/MenuLogged';
+import PizzaListPage from './pages/PizzaListPage';
 import PageNotFound from './images/PageNotFound.svg';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { makeStyles } from '@material-ui/styles';
@@ -41,6 +42,10 @@ function App() {
 
         <Route
          exact path="/menuOrder" component={MenuOrder}
+        />
+
+        <Route
+         exact path="/orderList" component={PizzaListPage}
         />
         
         <Route
