@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { auth, addPizza, getPizzas, deletePizza } from "../config/Fire";
+import background from '../images/pexels-vinicius-benedit-1082343.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     IconButton,
@@ -14,6 +15,14 @@ import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { DataGrid } from '@material-ui/data-grid';
 
 const useStyles = makeStyles((theme) => ({
+   backgroundd: {
+    backgroundImage: `url(${background})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    marginTop: 30,
+   },
+
     root: {
       display: 'flex',
       flexDirextion: 'row',
@@ -208,7 +217,7 @@ return (
 
                 <TextField
                  variant="filled"
-                 label="Pizza number"
+                 label="Pizzas Number"
                  placeholder="Enter number of pizzas"
                  fullWidth
                  className={classes.textField}

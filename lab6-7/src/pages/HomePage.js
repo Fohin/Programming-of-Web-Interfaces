@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Image1 from '../images/amicis-spread-spicy-peper-chicken-arugula-and-spinach-salad.jpg';
 import Image2 from '../images/pizza-salami-1080x721.jpg';
 import Image3 from '../images/photo-1513104890138-7c749659a591.jpg';
+import Image4 from '../images/pexels-nataliya-vaitkevich-5792327.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -98,7 +99,7 @@ export default function HomePage() {
       <CardActionArea to="/orderList" component={Link}>
         <CardMedia
           className={classes.media}
-          src={Image1}
+          src={Image4}
           title="Order List"
           component="img"
         />

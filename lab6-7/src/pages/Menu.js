@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import background from '../images/pexels-rodolfo-clix-1596888.jpg';
 import Image1 from '../images/Margherita.jpeg';
 import Image2 from '../images/Funghi.jpg';
 import Image3 from '../images/Salame.jpg';
@@ -15,6 +16,14 @@ import Image6 from '../images/Formaggio.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
+  backgroundd: {
+    backgroundImage: `url(${background})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    marginTop: 30,
+   },
+
   root: {
     marginTop: 20,
   },
@@ -44,10 +53,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Menu() {
   const classes = useStyles();
  
-
-  const addPizza = () => {
-
-  };
 
   return (
     <div>
