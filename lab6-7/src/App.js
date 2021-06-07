@@ -26,7 +26,7 @@ function App() {
 
   return (
 
-    <Router basename="/Pizzeria">
+    <Router basename="/Programming-of-Web-Interfaces">
       
       <AppBar/>
 
